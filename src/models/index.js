@@ -13,20 +13,26 @@ export const CakeModel = {
   imageURL: '',        // Image URL (Supabase Storage)
   price: 0,            // Price in currency
   quantity: 0,         // Available stock
-  rating: 0,           // Average rating (0-5)
+  rating: 0,           // Average rating (0-5) - calculated from feedbacks
+  totalRatings: 0,     // Total number of ratings
   tags: [],            // Array of tags ['birthday', 'chocolate', 'custom']
-  feedbacks: [],       // Array of Feedback objects
   createdAt: null,     // Timestamp
   updatedAt: null,     // Timestamp
 };
 
-// Feedback sub-model for Cakes
+// ============================================
+// FEEDBACKS COLLECTION - /feedbacks
+// ============================================
 export const FeedbackModel = {
-  id: '',              // Feedback ID
+  id: '',              // Firebase auto-generated key
+  cakeId: '',          // Reference to cake
+  cakeName: '',        // Cake name (for display)
   userId: '',          // User who gave feedback
   userName: '',        // User display name
+  userEmail: '',       // User email
   rating: 0,           // Rating (1-5)
   comment: '',         // Feedback text
+  approved: false,     // Admin approval status
   createdAt: null,     // Timestamp
 };
 
