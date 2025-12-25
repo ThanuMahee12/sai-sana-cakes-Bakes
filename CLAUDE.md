@@ -26,6 +26,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 3. **User-Friendly UX** - Easy navigation, clear CTAs, fast loading
 4. **Public Pages Priority** - Focus on public-facing pages first
 
+### Design System (IMPORTANT)
+- **Very smooth, soft design** - Clean, minimal, elegant
+- **3 colors only** - Thin, subtle, soft palette
+- **Color Palette:**
+  - Primary: Soft rose/pink (bakery warmth)
+  - Secondary: Cream/warm white (elegance)
+  - Accent: Soft brown/chocolate (contrast)
+- **Tailwind handles all styling** - No custom CSS needed
+- **Toast notifications:** Use react-toastify (not react-hot-toast)
+
 ### Content Strategy
 - **ALL content is dynamic** - fetched from Firebase/Supabase
 - **NO hardcoded text** - bakery name, logo, social links, hours all from database

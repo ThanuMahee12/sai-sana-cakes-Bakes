@@ -1,3 +1,45 @@
-/* Import all styles */
-@import './reset.css';
-@import './global.css';
+@import "tailwindcss";
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* Custom theme - Soft bakery colors */
+@theme {
+  /* Primary - Soft rose/pink */
+  --color-primary-50: #fdf2f4;
+  --color-primary-100: #fce7eb;
+  --color-primary-200: #f9d0d9;
+  --color-primary-300: #f4a9ba;
+  --color-primary-400: #ec7994;
+  --color-primary-500: #e04d73;
+  --color-primary: #f4a9ba;
+
+  /* Secondary - Cream/warm white */
+  --color-secondary-50: #fefdfb;
+  --color-secondary-100: #fdf9f3;
+  --color-secondary-200: #faf3e6;
+  --color-secondary: #fdf9f3;
+
+  /* Accent - Soft brown/chocolate */
+  --color-accent-500: #b17a5e;
+  --color-accent-600: #a46852;
+  --color-accent-700: #895545;
+  --color-accent-800: #70473c;
+  --color-accent: #895545;
+
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-secondary-50);
+  color: var(--color-accent-800);
+  -webkit-font-smoothing: antialiased;
+}
