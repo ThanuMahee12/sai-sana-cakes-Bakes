@@ -12,7 +12,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - React 18 + Vite + Tailwind CSS
 - Firebase (Auth, Realtime Database, Hosting)
 - Supabase (PostgreSQL + Storage for images)
-- Framer Motion (animations)
+- Framer Motion (2D animations, page transitions, micro-interactions)
+- Three.js + React Three Fiber (3D animations, hero effects)
 
 **Node.js >= 18.0.0 required.**
 
@@ -25,6 +26,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 2. **Smooth Animations** - Page transitions, scroll reveals, micro-interactions
 3. **User-Friendly UX** - Easy navigation, clear CTAs, fast loading
 4. **Public Pages Priority** - Focus on public-facing pages first
+
+### Animation Libraries (USE THESE!)
+- **Framer Motion** - Page transitions, scroll animations, hover effects, modals
+- **Three.js / React Three Fiber** - 3D hero backgrounds, floating cake models, particle effects
+- **@react-three/drei** - Pre-built 3D helpers (OrbitControls, Float, etc.)
+
+**Animation Guidelines:**
+- Use Framer Motion for most UI animations
+- Use Three.js sparingly (hero section, special effects) to keep bundle light
+- Prefer CSS animations in index.css for simple effects
 
 ### Design System (IMPORTANT)
 - **Very smooth, soft design** - Clean, minimal, elegant

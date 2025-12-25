@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
     "@supabase/supabase-js": "^2.89.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -26,6 +28,7 @@
     "react-toastify": "^11.0.5",
     "recharts": "^3.6.0",
     "tailwind-merge": "^3.4.0",
+    "three": "^0.182.0",
     "zod": "^4.2.1"
   },
   "devDependencies": {
