@@ -87,9 +87,8 @@ export const OrderItemModel = {
 
 // Order statuses
 export const OrderStatus = {
-  PENDING: 'pending',
-  CONFIRMED: 'confirmed',
-  PREPARING: 'preparing',
+  START: 'start',
+  INPROCESS: 'inprocess',
   READY: 'ready',
   DELIVERED: 'delivered',
   CANCELLED: 'cancelled',
@@ -149,7 +148,7 @@ export const createOrder = (data) => ({
   ...OrderModel,
   ...data,
   orderId: generateOrderId(data.items?.[0]?.cakeName || 'ORDER', 1),
-  status: OrderStatus.PENDING,
+  status: OrderStatus.START,
   paymentStatus: PaymentStatus.PENDING,
   createdAt: Date.now(),
   updatedAt: Date.now(),
